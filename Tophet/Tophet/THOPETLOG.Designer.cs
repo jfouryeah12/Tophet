@@ -38,6 +38,7 @@ namespace Tophet
             this.OptionKeyActLabel = new System.Windows.Forms.LinkLabel();
             this.GuestActLabel = new System.Windows.Forms.LinkLabel();
             this.imageData1 = new Tophet.ImageData();
+            this.ExitLabelFunction = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imageData1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,6 +128,7 @@ namespace Tophet
             this.GuestActLabel.TabIndex = 7;
             this.GuestActLabel.TabStop = true;
             this.GuestActLabel.Text = "GUEST MODE";
+            this.GuestActLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GuestActLabel_LinkClicked);
             // 
             // imageData1
             // 
@@ -138,6 +140,20 @@ namespace Tophet
             this.imageData1.TabIndex = 2;
             this.imageData1.TabStop = false;
             // 
+            // ExitLabelFunction
+            // 
+            this.ExitLabelFunction.AutoSize = true;
+            this.ExitLabelFunction.BackColor = System.Drawing.Color.Transparent;
+            this.ExitLabelFunction.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitLabelFunction.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitLabelFunction.ForeColor = System.Drawing.Color.Red;
+            this.ExitLabelFunction.Location = new System.Drawing.Point(325, -6);
+            this.ExitLabelFunction.Name = "ExitLabelFunction";
+            this.ExitLabelFunction.Size = new System.Drawing.Size(36, 33);
+            this.ExitLabelFunction.TabIndex = 8;
+            this.ExitLabelFunction.Text = "ⓧ";
+            this.ExitLabelFunction.Click += new System.EventHandler(this.ExitLabelFunction_Click);
+            // 
             // THOPETLOG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +162,7 @@ namespace Tophet
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(358, 553);
+            this.Controls.Add(this.ExitLabelFunction);
             this.Controls.Add(this.GuestActLabel);
             this.Controls.Add(this.OptionKeyActLabel);
             this.Controls.Add(this.IntroLabel);
@@ -177,6 +194,7 @@ namespace Tophet
         private System.Windows.Forms.Label IntroLabel;
         private System.Windows.Forms.LinkLabel OptionKeyActLabel;
         private System.Windows.Forms.LinkLabel GuestActLabel;
+        private System.Windows.Forms.Label ExitLabelFunction;
     }
 }
 

@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="THOPET.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="THOPET.Designer.cs">
+      <DependentUpon>THOPET.cs</DependentUpon>
     </Compile>
     <Compile Include="RunTimeData.cs" />
     <Compile Include="THOPETLOG.cs">
@@ -71,8 +71,8 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="TData\PHTextBox.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="THOPET.resx">
+      <DependentUpon>THOPET.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="THOPETLOG.resx">
       <DependentUpon>THOPETLOG.cs</DependentUpon>

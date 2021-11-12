@@ -9,3 +9,4 @@ C:\Users\jeric\Documents\Projects\WindowForm\Tophet\Tophet\obj\Debug\Tophet.pdb
 C:\Users\jeric\Documents\Projects\WindowForm\Tophet\Tophet\obj\Debug\Tophet.csproj.AssemblyReference.cache
 C:\Users\jeric\Documents\Projects\WindowForm\Tophet\Tophet\obj\Debug\Tophet.THOPETLOG.resources
 C:\Users\jeric\Documents\Projects\WindowForm\Tophet\Tophet\obj\Debug\Tophet.THOPETACTKEY.resources
+C:\Users\jeric\Documents\Projects\WindowForm\Tophet\Tophet\obj\Debug\Tophet.THOPET.resources

@@ -10,6 +10,16 @@ namespace Tophet
     {
         private string LoginEmail,Password;
         private string Reg_Key;
+        public string pre = "Premium";
+        public string basic = "Guest";
+        public string version = "Prototype 1.0v";
+        public string RuleLabel = "";
+
+        public string ruleLabel
+        {
+            get { return RuleLabel; }
+            set { RuleLabel = value; }
+        }
 
         public string login
         {
@@ -27,6 +37,7 @@ namespace Tophet
             get { return Reg_Key; }
             set { Reg_Key = value; }
         }
+      
 
         public RunTimeData() 
         {
