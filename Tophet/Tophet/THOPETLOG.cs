@@ -92,8 +92,8 @@ namespace Tophet
                 Text = wftitle + rtb.pre + " " + rtb.version;
                // t.IntroLabel.Te
                 Thread.Sleep(1000);
-                this.Close();
                 t.ShowDialog();
+                this.Close();
             }
             else { MessageBox.Show("Email or Password are incorrect please try again.","TOPHET", MessageBoxButtons.OK, MessageBoxIcon.Hand); }
             
