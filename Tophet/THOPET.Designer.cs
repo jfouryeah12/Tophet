@@ -38,17 +38,27 @@ namespace Tophet
             this.DetectionLabel = new System.Windows.Forms.Label();
             this.HistoryGif = new System.Windows.Forms.PictureBox();
             this.ScanPanel = new System.Windows.Forms.Panel();
+            this.ScannerLabel = new System.Windows.Forms.Label();
             this.ScannerIMAGE = new Tophet.ImageData();
             this.panel2 = new System.Windows.Forms.Panel();
             this.OutputPanel = new System.Windows.Forms.Panel();
             this.ProtectionIMAGE = new System.Windows.Forms.PictureBox();
             this.OutputDetails = new System.Windows.Forms.Label();
             this.IntroLabel = new System.Windows.Forms.Label();
-            this.ScannerLabel = new System.Windows.Forms.Label();
+            this.roundedButton1 = new Tophet.RoundedButton();
+            this.SettingsButton = new Tophet.RoundedButton();
+            this.FilterButton = new Tophet.RoundedButton();
+            this.LogoutButton = new Tophet.RoundedButton();
+            this.SettingsLabel = new System.Windows.Forms.Label();
+            this.FilterLabel = new System.Windows.Forms.Label();
+            this.ActivateLabel = new System.Windows.Forms.Label();
+            this.ExtraLabel = new System.Windows.Forms.Label();
+            this.noticeLabel = new System.Windows.Forms.Label();
             this.HistoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HistoryGif)).BeginInit();
             this.ScanPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ScannerIMAGE)).BeginInit();
+            this.panel2.SuspendLayout();
             this.OutputPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProtectionIMAGE)).BeginInit();
             this.SuspendLayout();
@@ -146,12 +156,27 @@ namespace Tophet
             // ScanPanel
             // 
             this.ScanPanel.BackColor = System.Drawing.Color.White;
+            this.ScanPanel.Controls.Add(this.noticeLabel);
+            this.ScanPanel.Controls.Add(this.roundedButton1);
             this.ScanPanel.Controls.Add(this.ScannerLabel);
             this.ScanPanel.Controls.Add(this.ScannerIMAGE);
             this.ScanPanel.Location = new System.Drawing.Point(308, 202);
             this.ScanPanel.Name = "ScanPanel";
             this.ScanPanel.Size = new System.Drawing.Size(280, 249);
             this.ScanPanel.TabIndex = 1;
+            // 
+            // ScannerLabel
+            // 
+            this.ScannerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ScannerLabel.AutoEllipsis = true;
+            this.ScannerLabel.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScannerLabel.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ScannerLabel.Location = new System.Drawing.Point(63, 89);
+            this.ScannerLabel.Name = "ScannerLabel";
+            this.ScannerLabel.Size = new System.Drawing.Size(160, 24);
+            this.ScannerLabel.TabIndex = 7;
+            this.ScannerLabel.Text = "Scanner";
+            this.ScannerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ScannerIMAGE
             // 
@@ -167,6 +192,13 @@ namespace Tophet
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.ExtraLabel);
+            this.panel2.Controls.Add(this.ActivateLabel);
+            this.panel2.Controls.Add(this.FilterLabel);
+            this.panel2.Controls.Add(this.SettingsLabel);
+            this.panel2.Controls.Add(this.LogoutButton);
+            this.panel2.Controls.Add(this.FilterButton);
+            this.panel2.Controls.Add(this.SettingsButton);
             this.panel2.Location = new System.Drawing.Point(603, 202);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(280, 249);
@@ -220,18 +252,118 @@ namespace Tophet
             this.IntroLabel.TabIndex = 6;
             this.IntroLabel.Text = "Not Registered";
             // 
-            // ScannerLabel
+            // roundedButton1
             // 
-            this.ScannerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.ScannerLabel.AutoEllipsis = true;
-            this.ScannerLabel.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScannerLabel.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ScannerLabel.Location = new System.Drawing.Point(63, 89);
-            this.ScannerLabel.Name = "ScannerLabel";
-            this.ScannerLabel.Size = new System.Drawing.Size(160, 24);
-            this.ScannerLabel.TabIndex = 7;
-            this.ScannerLabel.Text = "Scanner";
-            this.ScannerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedButton1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.Font = new System.Drawing.Font("Alef", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(53, 167);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(170, 54);
+            this.roundedButton1.TabIndex = 8;
+            this.roundedButton1.Text = "Scan";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.SettingsButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsButton.ForeColor = System.Drawing.Color.White;
+            this.SettingsButton.Location = new System.Drawing.Point(150, 41);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.Size = new System.Drawing.Size(127, 54);
+            this.SettingsButton.TabIndex = 9;
+            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.UseVisualStyleBackColor = false;
+            // 
+            // FilterButton
+            // 
+            this.FilterButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.FilterButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FilterButton.ForeColor = System.Drawing.Color.White;
+            this.FilterButton.Location = new System.Drawing.Point(150, 101);
+            this.FilterButton.Name = "FilterButton";
+            this.FilterButton.Size = new System.Drawing.Size(127, 54);
+            this.FilterButton.TabIndex = 10;
+            this.FilterButton.Text = "Filter Scan";
+            this.FilterButton.UseVisualStyleBackColor = false;
+            // 
+            // LogoutButton
+            // 
+            this.LogoutButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.LogoutButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutButton.ForeColor = System.Drawing.Color.White;
+            this.LogoutButton.Location = new System.Drawing.Point(150, 161);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Size = new System.Drawing.Size(127, 54);
+            this.LogoutButton.TabIndex = 11;
+            this.LogoutButton.Text = "Logout";
+            this.LogoutButton.UseVisualStyleBackColor = false;
+            // 
+            // SettingsLabel
+            // 
+            this.SettingsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.SettingsLabel.AutoEllipsis = true;
+            this.SettingsLabel.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsLabel.ForeColor = System.Drawing.Color.Silver;
+            this.SettingsLabel.Location = new System.Drawing.Point(12, 56);
+            this.SettingsLabel.Name = "SettingsLabel";
+            this.SettingsLabel.Size = new System.Drawing.Size(133, 24);
+            this.SettingsLabel.TabIndex = 7;
+            this.SettingsLabel.Text = "Changing properties";
+            this.SettingsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FilterLabel
+            // 
+            this.FilterLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.FilterLabel.AutoEllipsis = true;
+            this.FilterLabel.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FilterLabel.ForeColor = System.Drawing.Color.Silver;
+            this.FilterLabel.Location = new System.Drawing.Point(12, 116);
+            this.FilterLabel.Name = "FilterLabel";
+            this.FilterLabel.Size = new System.Drawing.Size(133, 24);
+            this.FilterLabel.TabIndex = 12;
+            this.FilterLabel.Text = "Auto or Manual";
+            this.FilterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ActivateLabel
+            // 
+            this.ActivateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ActivateLabel.AutoEllipsis = true;
+            this.ActivateLabel.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActivateLabel.ForeColor = System.Drawing.Color.Silver;
+            this.ActivateLabel.Location = new System.Drawing.Point(12, 176);
+            this.ActivateLabel.Name = "ActivateLabel";
+            this.ActivateLabel.Size = new System.Drawing.Size(133, 24);
+            this.ActivateLabel.TabIndex = 13;
+            this.ActivateLabel.Text = "Activate key or email";
+            this.ActivateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ExtraLabel
+            // 
+            this.ExtraLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExtraLabel.AutoEllipsis = true;
+            this.ExtraLabel.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExtraLabel.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ExtraLabel.Location = new System.Drawing.Point(62, 14);
+            this.ExtraLabel.Name = "ExtraLabel";
+            this.ExtraLabel.Size = new System.Drawing.Size(160, 24);
+            this.ExtraLabel.TabIndex = 9;
+            this.ExtraLabel.Text = "Extra";
+            this.ExtraLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // noticeLabel
+            // 
+            this.noticeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.noticeLabel.AutoEllipsis = true;
+            this.noticeLabel.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noticeLabel.ForeColor = System.Drawing.Color.Silver;
+            this.noticeLabel.Location = new System.Drawing.Point(33, 131);
+            this.noticeLabel.Name = "noticeLabel";
+            this.noticeLabel.Size = new System.Drawing.Size(222, 24);
+            this.noticeLabel.TabIndex = 7;
+            this.noticeLabel.Text = "You are clean!";
+            this.noticeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // THOPET
             // 
@@ -256,6 +388,7 @@ namespace Tophet
             ((System.ComponentModel.ISupportInitialize)(this.HistoryGif)).EndInit();
             this.ScanPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ScannerIMAGE)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.OutputPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ProtectionIMAGE)).EndInit();
             this.ResumeLayout(false);
@@ -280,5 +413,14 @@ namespace Tophet
         private System.Windows.Forms.Label DetectionLabel;
         private ImageData ScannerIMAGE;
         private System.Windows.Forms.Label ScannerLabel;
+        private RoundedButton roundedButton1;
+        private System.Windows.Forms.Label noticeLabel;
+        private System.Windows.Forms.Label ExtraLabel;
+        private System.Windows.Forms.Label ActivateLabel;
+        private System.Windows.Forms.Label FilterLabel;
+        private System.Windows.Forms.Label SettingsLabel;
+        private RoundedButton LogoutButton;
+        private RoundedButton FilterButton;
+        private RoundedButton SettingsButton;
     }
 }
