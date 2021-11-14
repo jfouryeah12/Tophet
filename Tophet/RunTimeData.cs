@@ -14,7 +14,7 @@ namespace Tophet
         public string basic = "Guest";
         public string version = "Prototype 1.0v";
         public string RuleLabel = "";
-
+        public string QuickGrabe = "";
         public string ruleLabel
         {
             get { return RuleLabel; }
