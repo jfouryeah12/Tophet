@@ -71,10 +71,11 @@ namespace Tophet
         {
             if (KeyBox.Text == rtb.RegistrationKey) 
             {
-                
+
                 //Register Mode and Version
+                t.introLabel = rtb.pre;//Set Premium Label of Intro label
                 t.Text = wftitle + rtb.pre + " " + rtb.version;
-                rtb.RuleLabel = "Premium";
+               // rtb.RuleLabel = "Premium";
                
 
                 //Change Form
@@ -96,7 +97,9 @@ namespace Tophet
 
         private void GuestActLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-       
+            //Register Mode 
+            t.introLabel = rtb.basic;//Set Premium Label of Intro label
+            //Function
             this.Hide();
             Thread.Sleep(1000);
             t.Text = "THOPET Guest Mode" + " " + rtb.version;

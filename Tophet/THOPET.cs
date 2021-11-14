@@ -13,10 +13,17 @@ namespace Tophet
     public partial class THOPET : Form
     {
         RunTimeData rtb = new RunTimeData();
+       
         public THOPET()
         {
             InitializeComponent();
-            IntroLabel.Text = rtb.RuleLabel;
+            
+        }
+        
+        public string introLabel //Intro Label 
+        {
+            get { return this.IntroLabel.Text; }
+            set { this.IntroLabel.Text = value; }
         }
     }
 }

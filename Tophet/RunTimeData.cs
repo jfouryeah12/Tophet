@@ -8,18 +8,14 @@ namespace Tophet
 {
     class RunTimeData
     {
+        //Properties Set
         private string LoginEmail,Password;
         private string Reg_Key;
         public string pre = "Premium";
-        public string basic = "Guest";
+        public string basic = "Guest Mode";
         public string version = "Prototype 1.0v";
-        public string RuleLabel = "";
-        public string QuickGrabe = "";
-        public string ruleLabel
-        {
-            get { return RuleLabel; }
-            set { RuleLabel = value; }
-        }
+
+        //Set and Get 
 
         public string login
         {
@@ -38,13 +34,15 @@ namespace Tophet
             set { Reg_Key = value; }
         }
       
-
+        //Runtime Data runner
         public RunTimeData() 
         {
             //Account
-            this.login = "Admin@gmail.com";
-            this.password = "admin";
-            this.RegistrationKey = "100-200-300-400-500";
+    
+            this.login = "a";
+            this.password = "a";
+            this.RegistrationKey = "100-200-300-400-500"; 
+
         }
     }
 }

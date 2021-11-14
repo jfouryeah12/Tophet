@@ -12,6 +12,7 @@ using System.Threading;
 
 namespace Tophet
 {
+    
     public partial class THOPETLOG : Form
     {
         //Border
@@ -33,6 +34,8 @@ namespace Tophet
          THOPET t = new THOPET(); //Lobby
         //Basic
         string wftitle = "Thopet ";
+        bool emote = false;
+
         //Start
         public THOPETLOG()
         {
@@ -86,16 +89,20 @@ namespace Tophet
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            //Login Button Function
             if (EmailBox.Text == rtb.login && PasswordBox.Text == rtb.password) 
             {
+                //Register Mode and Version
+                t.introLabel = rtb.pre;//Set Premium Label of Intro label
                 this.Hide();
-                Text = wftitle + rtb.pre + " " + rtb.version;
+                t.Text = wftitle + rtb.pre + " " + rtb.version;
                 Thread.Sleep(1000);
                 t.ShowDialog();
                 this.Close();
                 
             }
             else { MessageBox.Show("Email or Password are incorrect please try again.","TOPHET", MessageBoxButtons.OK, MessageBoxIcon.Hand); }
+
             
         }
 
@@ -113,10 +120,12 @@ namespace Tophet
         {
             System.Environment.Exit(1); //Terminate Program
         }
-
+        //Enter Guest Mode
         private void GuestActLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            //Register Mode 
+            t.introLabel = rtb.basic;//Set Premium Label of Intro label
+            //Function
             this.Hide();
             Thread.Sleep(1000);
             t.Text = "THOPET Guest Mode"+" "+rtb.version;

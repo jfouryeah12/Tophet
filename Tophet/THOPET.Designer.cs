@@ -78,9 +78,9 @@ namespace Tophet
             this.IntroLabel.ForeColor = System.Drawing.Color.Snow;
             this.IntroLabel.Location = new System.Drawing.Point(12, 9);
             this.IntroLabel.Name = "IntroLabel";
-            this.IntroLabel.Size = new System.Drawing.Size(104, 30);
+            this.IntroLabel.Size = new System.Drawing.Size(160, 30);
             this.IntroLabel.TabIndex = 6;
-            this.IntroLabel.Text = "TOPHET";
+            this.IntroLabel.Text = "Not Registered";
             // 
             // THOPET
             // 
