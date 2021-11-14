@@ -34,7 +34,6 @@ namespace Tophet
          THOPET t = new THOPET(); //Lobby
         //Basic
         string wftitle = "Thopet ";
-        bool emote = false;
 
         //Start
         public THOPETLOG()

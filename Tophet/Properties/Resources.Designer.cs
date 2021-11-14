@@ -93,6 +93,16 @@ namespace Tophet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap History {
+            get {
+                object obj = ResourceManager.GetObject("History", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoginApi {
             get {
                 object obj = ResourceManager.GetObject("LoginApi", resourceCulture);
@@ -106,6 +116,16 @@ namespace Tophet.Properties {
         internal static System.Drawing.Bitmap Protected {
             get {
                 object obj = ResourceManager.GetObject("Protected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scan {
+            get {
+                object obj = ResourceManager.GetObject("scan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -124,5 +124,11 @@
   <ItemGroup>
     <None Include="Pdata\Internal\Protected.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pdata\Internal\History.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pdata\Internal\scan.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
