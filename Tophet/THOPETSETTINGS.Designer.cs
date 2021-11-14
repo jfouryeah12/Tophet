@@ -36,15 +36,16 @@ namespace Tophet
             this.ListLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.DarkModeButton = new System.Windows.Forms.RadioButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.Win11Button = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.DefaultButton = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.BackgroundLabel = new System.Windows.Forms.Label();
+            this.LobbyLink = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -113,15 +114,15 @@ namespace Tophet
             // panel1
             // 
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.DarkModeButton);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.Win11Button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.DefaultButton);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.BackgroundLabel);
             this.panel1.Location = new System.Drawing.Point(12, 137);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(871, 332);
@@ -141,14 +142,14 @@ namespace Tophet
             this.label4.TabIndex = 17;
             this.label4.Text = "DarkMode Background";
             // 
-            // radioButton2
+            // DarkModeButton
             // 
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(446, 177);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 16;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.DarkModeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DarkModeButton.Location = new System.Drawing.Point(446, 177);
+            this.DarkModeButton.Name = "DarkModeButton";
+            this.DarkModeButton.Size = new System.Drawing.Size(14, 13);
+            this.DarkModeButton.TabIndex = 16;
+            this.DarkModeButton.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -172,14 +173,14 @@ namespace Tophet
             this.label3.TabIndex = 14;
             this.label3.Text = "Win 11 Background";
             // 
-            // radioButton1
+            // Win11Button
             // 
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(259, 177);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 13;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.Win11Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Win11Button.Location = new System.Drawing.Point(259, 177);
+            this.Win11Button.Name = "Win11Button";
+            this.Win11Button.Size = new System.Drawing.Size(14, 13);
+            this.Win11Button.TabIndex = 13;
+            this.Win11Button.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -225,17 +226,32 @@ namespace Tophet
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // BackgroundLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Alef", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(16, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 28);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Background";
+            this.BackgroundLabel.AutoSize = true;
+            this.BackgroundLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BackgroundLabel.Font = new System.Drawing.Font("Alef", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackgroundLabel.ForeColor = System.Drawing.Color.Black;
+            this.BackgroundLabel.Location = new System.Drawing.Point(16, 16);
+            this.BackgroundLabel.Name = "BackgroundLabel";
+            this.BackgroundLabel.Size = new System.Drawing.Size(135, 28);
+            this.BackgroundLabel.TabIndex = 8;
+            this.BackgroundLabel.Text = "Background";
+            // 
+            // LobbyLink
+            // 
+            this.LobbyLink.AutoSize = true;
+            this.LobbyLink.BackColor = System.Drawing.Color.Transparent;
+            this.LobbyLink.Font = new System.Drawing.Font("Alef", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LobbyLink.LinkColor = System.Drawing.Color.White;
+            this.LobbyLink.Location = new System.Drawing.Point(819, 9);
+            this.LobbyLink.Name = "LobbyLink";
+            this.LobbyLink.Size = new System.Drawing.Size(64, 22);
+            this.LobbyLink.TabIndex = 19;
+            this.LobbyLink.TabStop = true;
+            this.LobbyLink.Text = "LOBBY";
+            this.LobbyLink.VisitedLinkColor = System.Drawing.Color.Lime;
+            this.LobbyLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LobbyLink_LinkClicked);
             // 
             // THOPETSETTINGS
             // 
@@ -243,6 +259,7 @@ namespace Tophet
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tophet.Properties.Resources.darkmode;
             this.ClientSize = new System.Drawing.Size(895, 481);
+            this.Controls.Add(this.LobbyLink);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ListLabel);
             this.Controls.Add(this.AccountButton);
@@ -271,14 +288,15 @@ namespace Tophet
         private System.Windows.Forms.Label ListLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton Win11Button;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton DefaultButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label BackgroundLabel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton DarkModeButton;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.LinkLabel LobbyLink;
     }
 }

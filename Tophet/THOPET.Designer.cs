@@ -317,6 +317,7 @@ namespace Tophet
             this.LogoutButton.TabIndex = 11;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // FilterButton
             // 

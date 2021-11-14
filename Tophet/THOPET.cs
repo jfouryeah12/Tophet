@@ -40,5 +40,15 @@ namespace Tophet
             this.Close();
 
         }
+
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            THOPETLOG tl = new THOPETLOG();
+            //Register Mode and Version
+            this.Hide();
+            Thread.Sleep(1000);
+            tl.ShowDialog();
+            this.Close();
+        }
     }
 }
