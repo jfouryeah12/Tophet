@@ -17,7 +17,7 @@ namespace Tophet
         RunTimeData rtb = new RunTimeData();
         THOPETSETTINGS ts = new THOPETSETTINGS();
         //Basics
-        string wftitle = "THOPET";
+        string wftitle = "THOPET ";
         public THOPET()
         {
             InitializeComponent();

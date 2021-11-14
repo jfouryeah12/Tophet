@@ -56,6 +56,12 @@
       <DependentUpon>THOPET.cs</DependentUpon>
     </Compile>
     <Compile Include="RunTimeData.cs" />
+    <Compile Include="THOPETFILTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THOPETFILTER.Designer.cs">
+      <DependentUpon>THOPETFILTER.cs</DependentUpon>
+    </Compile>
     <Compile Include="THOPETLOG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,14 +80,17 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="TData\PHTextBox.cs" />
-    <Compile Include="THOPETTSETTINGS.cs">
+    <Compile Include="THOPETSETTINGS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="THOPETTSETTINGS.Designer.cs">
-      <DependentUpon>THOPETTSETTINGS.cs</DependentUpon>
+    <Compile Include="THOPETSETTINGS.Designer.cs">
+      <DependentUpon>THOPETSETTINGS.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="THOPET.resx">
       <DependentUpon>THOPET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THOPETFILTER.resx">
+      <DependentUpon>THOPETFILTER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="THOPETLOG.resx">
       <DependentUpon>THOPETLOG.cs</DependentUpon>
@@ -99,8 +108,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="THOPETTSETTINGS.resx">
-      <DependentUpon>THOPETTSETTINGS.cs</DependentUpon>
+    <EmbeddedResource Include="THOPETSETTINGS.resx">
+      <DependentUpon>THOPETSETTINGS.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

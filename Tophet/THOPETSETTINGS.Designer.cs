@@ -64,6 +64,7 @@ namespace Tophet
             this.SettingsButton.TabIndex = 0;
             this.SettingsButton.Text = "Settings";
             this.SettingsButton.UseVisualStyleBackColor = false;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // FilterButton
             // 
@@ -78,6 +79,7 @@ namespace Tophet
             this.FilterButton.TabIndex = 1;
             this.FilterButton.Text = "Filter Scan";
             this.FilterButton.UseVisualStyleBackColor = false;
+            this.FilterButton.Click += new System.EventHandler(this.FilterButton_Click);
             // 
             // AccountButton
             // 
@@ -92,6 +94,7 @@ namespace Tophet
             this.AccountButton.TabIndex = 2;
             this.AccountButton.Text = "Account";
             this.AccountButton.UseVisualStyleBackColor = false;
+            this.AccountButton.Click += new System.EventHandler(this.AccountButton_Click);
             // 
             // ListLabel
             // 
@@ -105,6 +108,7 @@ namespace Tophet
             this.ListLabel.Size = new System.Drawing.Size(94, 30);
             this.ListLabel.TabIndex = 6;
             this.ListLabel.Text = "Settings";
+            this.ListLabel.Click += new System.EventHandler(this.ListLabel_Click);
             // 
             // panel1
             // 
@@ -122,6 +126,7 @@ namespace Tophet
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(871, 332);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label4
             // 
