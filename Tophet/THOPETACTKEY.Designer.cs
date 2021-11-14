@@ -137,7 +137,7 @@ namespace Tophet
             this.MinimizeBox = false;
             this.Name = "THOPETACTKEY";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TOPHET*ACTIVATIONKEY";
+            this.Text = "THOPET*ACTIVATIONKEY";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -100,7 +100,7 @@ namespace Tophet
             this.IntroLabel.Name = "IntroLabel";
             this.IntroLabel.Size = new System.Drawing.Size(104, 30);
             this.IntroLabel.TabIndex = 5;
-            this.IntroLabel.Text = "TOPHET";
+            this.IntroLabel.Text = "THOPET";
             // 
             // OptionKeyActLabel
             // 
@@ -178,7 +178,7 @@ namespace Tophet
             this.MinimizeBox = false;
             this.Name = "THOPETLOG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TOPHET*LOGIN";
+            this.Text = "THOPET*LOGIN";
             ((System.ComponentModel.ISupportInitialize)(this.imageData1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

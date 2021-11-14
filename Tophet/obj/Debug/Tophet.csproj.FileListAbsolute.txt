@@ -21,3 +21,4 @@ C:\Users\jeric\Documents\gitHub\Tophet\Tophet\obj\Debug\Tophet.csproj.GenerateRe
 C:\Users\jeric\Documents\gitHub\Tophet\Tophet\obj\Debug\Tophet.csproj.CoreCompileInputs.cache
 C:\Users\jeric\Documents\gitHub\Tophet\Tophet\obj\Debug\Tophet.exe
 C:\Users\jeric\Documents\gitHub\Tophet\Tophet\obj\Debug\Tophet.pdb
+C:\Users\jeric\Documents\gitHub\Tophet\Tophet\obj\Debug\Tophet.csproj.AssemblyReference.cache

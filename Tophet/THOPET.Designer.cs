@@ -383,7 +383,7 @@ namespace Tophet
             this.MinimizeBox = false;
             this.Name = "THOPET";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TOPHET";
+            this.Text = "THOPET";
             this.HistoryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HistoryGif)).EndInit();
             this.ScanPanel.ResumeLayout(false);
