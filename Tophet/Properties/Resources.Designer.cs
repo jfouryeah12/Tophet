@@ -103,6 +103,16 @@ namespace Tophet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Protected {
+            get {
+                object obj = ResourceManager.GetObject("Protected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap screen_0 {
             get {
                 object obj = ResourceManager.GetObject("screen-0", resourceCulture);

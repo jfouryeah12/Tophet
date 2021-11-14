@@ -33,8 +33,12 @@ namespace Tophet
             this.HistoryPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.OutputPanel = new System.Windows.Forms.Panel();
+            this.OutputDetails = new System.Windows.Forms.Label();
             this.IntroLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.OutputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // HistoryPanel
@@ -61,13 +65,29 @@ namespace Tophet
             this.panel2.Size = new System.Drawing.Size(280, 267);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // OutputPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(217, 55);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(443, 128);
-            this.panel3.TabIndex = 2;
+            this.OutputPanel.AutoScroll = true;
+            this.OutputPanel.BackColor = System.Drawing.Color.Transparent;
+            this.OutputPanel.Controls.Add(this.pictureBox1);
+            this.OutputPanel.Controls.Add(this.OutputDetails);
+            this.OutputPanel.Location = new System.Drawing.Point(215, 55);
+            this.OutputPanel.Name = "OutputPanel";
+            this.OutputPanel.Size = new System.Drawing.Size(533, 128);
+            this.OutputPanel.TabIndex = 2;
+            // 
+            // OutputDetails
+            // 
+            this.OutputDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.OutputDetails.AutoEllipsis = true;
+            this.OutputDetails.Font = new System.Drawing.Font("Alef", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutputDetails.ForeColor = System.Drawing.Color.Cyan;
+            this.OutputDetails.Location = new System.Drawing.Point(124, 50);
+            this.OutputDetails.Name = "OutputDetails";
+            this.OutputDetails.Size = new System.Drawing.Size(406, 32);
+            this.OutputDetails.TabIndex = 0;
+            this.OutputDetails.Text = "Great job! You\'re fully protected";
+            this.OutputDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // IntroLabel
             // 
@@ -82,6 +102,17 @@ namespace Tophet
             this.IntroLabel.TabIndex = 6;
             this.IntroLabel.Text = "Not Registered";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Tophet.Properties.Resources.Protected;
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 122);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // THOPET
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,7 +121,7 @@ namespace Tophet
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(895, 481);
             this.Controls.Add(this.IntroLabel);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.OutputPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.HistoryPanel);
@@ -101,6 +132,8 @@ namespace Tophet
             this.Name = "THOPET";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TOPHET";
+            this.OutputPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,7 +144,9 @@ namespace Tophet
         private System.Windows.Forms.Panel HistoryPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel OutputPanel;
         private System.Windows.Forms.Label IntroLabel;
+        private System.Windows.Forms.Label OutputDetails;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

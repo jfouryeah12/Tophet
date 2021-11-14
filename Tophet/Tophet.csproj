@@ -121,5 +121,8 @@
   <ItemGroup>
     <None Include="Pdata\darkmode.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pdata\Internal\Protected.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
