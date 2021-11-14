@@ -41,10 +41,12 @@ namespace Tophet
             this.Close();
         }
 
-        private void LobbyLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LobbyLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)//Go to Lobby Tab
         {
             THOPET lobby = new THOPET();
             //Register Mode and Version
+            lobby.introLabel = rtb.pre;//Set Premium Label of Intro label
+            lobby.Text = wftitle + rtb.pre + " " + rtb.version;
             this.Hide();
             lobby.Text = wftitle + rtb.pre + " " + rtb.version;
             Thread.Sleep(1000);
@@ -52,7 +54,7 @@ namespace Tophet
             this.Close();
         }
 
-        private void LogoutButton_Click(object sender, EventArgs e)
+        private void LogoutButton_Click(object sender, EventArgs e)//Go to Login Tab
         {
             THOPETLOG tl = new THOPETLOG();
             //Register Mode and Version

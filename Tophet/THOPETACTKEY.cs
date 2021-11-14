@@ -98,8 +98,11 @@ namespace Tophet
         private void GuestActLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //Register Mode 
-            t.introLabel = rtb.basic;//Set Premium Label of Intro label
-            //Function
+            t.introLabel = rtb.basic;//Set Basic Label of Intro label
+            //Prepare Function
+            t.settingButton.Enabled = false;
+            t.filterButton.Enabled = false;
+            //Start Function
             this.Hide();
             Thread.Sleep(1000);
             t.Text = "THOPET Guest Mode" + " " + rtb.version;

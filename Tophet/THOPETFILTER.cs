@@ -42,9 +42,11 @@ namespace Tophet
 
         }
 
-        private void LobbyLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LobbyLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)//Go to Lobby Tab
         {
             THOPET lobby = new THOPET();
+            lobby.introLabel = rtb.pre;//Set Premium Label of Intro label
+            lobby.Text = wftitle + rtb.pre + " " + rtb.version;
             //Register Mode and Version
             this.Hide();
             lobby.Text = wftitle + rtb.pre + " " + rtb.version;

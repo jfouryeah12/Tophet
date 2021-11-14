@@ -330,6 +330,7 @@ namespace Tophet
             this.FilterButton.TabIndex = 10;
             this.FilterButton.Text = "Filter Proctection";
             this.FilterButton.UseVisualStyleBackColor = false;
+            this.FilterButton.Click += new System.EventHandler(this.FilterButton_Click);
             // 
             // SettingsButton
             // 
