@@ -19,7 +19,9 @@ namespace Tophet
         }
         RunTimeData rtb = new RunTimeData();
         string wftitle = "THOPET ";
-        private void FilterButton_Click(object sender, EventArgs e)
+
+        private void FilterButton_Click(object sender, EventArgs e)//Go to Filter Tab
+
         {
             THOPETFILTER tf = new THOPETFILTER();
             //Register Mode and Version

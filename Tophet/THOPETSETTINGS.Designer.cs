@@ -77,7 +77,7 @@ namespace Tophet
             this.FilterButton.Name = "FilterButton";
             this.FilterButton.Size = new System.Drawing.Size(306, 68);
             this.FilterButton.TabIndex = 1;
-            this.FilterButton.Text = "Filter Scan";
+            this.FilterButton.Text = "Filter Protection";
             this.FilterButton.UseVisualStyleBackColor = false;
             this.FilterButton.Click += new System.EventHandler(this.FilterButton_Click);
             // 
