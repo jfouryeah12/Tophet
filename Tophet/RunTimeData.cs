@@ -39,8 +39,8 @@ namespace Tophet
         {
             //Account
     
-            this.login = "a";
-            this.password = "a";
+            this.login = "Admin@gmail.com";
+            this.password = "admin";
             this.RegistrationKey = "100-200-300-400-500"; 
 
         }
