@@ -15,7 +15,7 @@ namespace Tophet
     {
         //Runner Form and Data
         RunTimeData rtb = new RunTimeData();
-        THOPETTSETTINGS ts = new THOPETTSETTINGS();
+        THOPETSETTINGS ts = new THOPETSETTINGS();
         //Basics
         string wftitle = "THOPET";
         public THOPET()

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tophet
 {
-    public partial class THOPETTSETTINGS : Form
+    public partial class THOPETSETTINGS : Form
     {
-        public THOPETTSETTINGS()
+        public THOPETSETTINGS()
         {
             InitializeComponent();
         }
