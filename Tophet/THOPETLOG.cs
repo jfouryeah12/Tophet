@@ -90,7 +90,6 @@ namespace Tophet
             {
                 this.Hide();
                 Text = wftitle + rtb.pre + " " + rtb.version;
-               // t.IntroLabel.Te
                 Thread.Sleep(1000);
                 t.ShowDialog();
                 this.Close();
