@@ -175,6 +175,8 @@ namespace Tophet
             // ExploitProtectionCheckbox
             // 
             this.ExploitProtectionCheckbox.AutoSize = true;
+            this.ExploitProtectionCheckbox.Checked = true;
+            this.ExploitProtectionCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ExploitProtectionCheckbox.Location = new System.Drawing.Point(322, 78);
             this.ExploitProtectionCheckbox.Name = "ExploitProtectionCheckbox";
             this.ExploitProtectionCheckbox.Size = new System.Drawing.Size(15, 14);
@@ -184,6 +186,8 @@ namespace Tophet
             // RansomProtectionCheckbox
             // 
             this.RansomProtectionCheckbox.AutoSize = true;
+            this.RansomProtectionCheckbox.Checked = true;
+            this.RansomProtectionCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.RansomProtectionCheckbox.Location = new System.Drawing.Point(322, 54);
             this.RansomProtectionCheckbox.Name = "RansomProtectionCheckbox";
             this.RansomProtectionCheckbox.Size = new System.Drawing.Size(15, 14);
@@ -193,6 +197,8 @@ namespace Tophet
             // MalwareProtectionCheckbox
             // 
             this.MalwareProtectionCheckbox.AutoSize = true;
+            this.MalwareProtectionCheckbox.Checked = true;
+            this.MalwareProtectionCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.MalwareProtectionCheckbox.Location = new System.Drawing.Point(322, 27);
             this.MalwareProtectionCheckbox.Name = "MalwareProtectionCheckbox";
             this.MalwareProtectionCheckbox.Size = new System.Drawing.Size(15, 14);
@@ -202,6 +208,8 @@ namespace Tophet
             // WebProtectionCheckbox
             // 
             this.WebProtectionCheckbox.AutoSize = true;
+            this.WebProtectionCheckbox.Checked = true;
+            this.WebProtectionCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.WebProtectionCheckbox.Location = new System.Drawing.Point(322, 3);
             this.WebProtectionCheckbox.Name = "WebProtectionCheckbox";
             this.WebProtectionCheckbox.Size = new System.Drawing.Size(15, 14);
