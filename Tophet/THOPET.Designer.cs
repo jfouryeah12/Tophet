@@ -39,28 +39,28 @@ namespace Tophet
             this.HistoryGif = new System.Windows.Forms.PictureBox();
             this.ScanPanel = new System.Windows.Forms.Panel();
             this.noticeLabel = new System.Windows.Forms.Label();
+            this.roundedButton1 = new Tophet.RoundedButton();
             this.ScannerLabel = new System.Windows.Forms.Label();
+            this.ScannerIMAGE = new Tophet.ImageData();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ExtraLabel = new System.Windows.Forms.Label();
             this.ActivateLabel = new System.Windows.Forms.Label();
             this.FilterLabel = new System.Windows.Forms.Label();
             this.SettingsLabel = new System.Windows.Forms.Label();
+            this.LogoutButton = new Tophet.RoundedButton();
+            this.FilterButton = new Tophet.RoundedButton();
+            this.SettingsButton = new Tophet.RoundedButton();
             this.OutputPanel = new System.Windows.Forms.Panel();
             this.ProtectionIMAGE = new System.Windows.Forms.PictureBox();
             this.OutputDetails = new System.Windows.Forms.Label();
             this.IntroLabel = new System.Windows.Forms.Label();
-            this.LogoutButton = new Tophet.RoundedButton();
-            this.FilterButton = new Tophet.RoundedButton();
-            this.SettingsButton = new Tophet.RoundedButton();
-            this.roundedButton1 = new Tophet.RoundedButton();
-            this.ScannerIMAGE = new Tophet.ImageData();
             this.HistoryPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HistoryGif)).BeginInit();
             this.ScanPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ScannerIMAGE)).BeginInit();
             this.panel2.SuspendLayout();
             this.OutputPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProtectionIMAGE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ScannerIMAGE)).BeginInit();
             this.SuspendLayout();
             // 
             // HistoryPanel
@@ -178,6 +178,18 @@ namespace Tophet
             this.noticeLabel.Text = "You are clean!";
             this.noticeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.roundedButton1.Font = new System.Drawing.Font("Alef", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(53, 167);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(170, 54);
+            this.roundedButton1.TabIndex = 8;
+            this.roundedButton1.Text = "Scan";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
             // ScannerLabel
             // 
             this.ScannerLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -190,6 +202,17 @@ namespace Tophet
             this.ScannerLabel.TabIndex = 7;
             this.ScannerLabel.Text = "Scanner";
             this.ScannerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ScannerIMAGE
+            // 
+            this.ScannerIMAGE.BackColor = System.Drawing.Color.Transparent;
+            this.ScannerIMAGE.Image = global::Tophet.Properties.Resources.scan;
+            this.ScannerIMAGE.Location = new System.Drawing.Point(97, 16);
+            this.ScannerIMAGE.Name = "ScannerIMAGE";
+            this.ScannerIMAGE.Size = new System.Drawing.Size(89, 61);
+            this.ScannerIMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ScannerIMAGE.TabIndex = 0;
+            this.ScannerIMAGE.TabStop = false;
             // 
             // panel2
             // 
@@ -258,6 +281,45 @@ namespace Tophet
             this.SettingsLabel.Text = "Changing properties";
             this.SettingsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LogoutButton
+            // 
+            this.LogoutButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.LogoutButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutButton.ForeColor = System.Drawing.Color.White;
+            this.LogoutButton.Location = new System.Drawing.Point(150, 161);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Size = new System.Drawing.Size(127, 54);
+            this.LogoutButton.TabIndex = 11;
+            this.LogoutButton.Text = "Logout";
+            this.LogoutButton.UseVisualStyleBackColor = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
+            // 
+            // FilterButton
+            // 
+            this.FilterButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.FilterButton.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FilterButton.ForeColor = System.Drawing.Color.White;
+            this.FilterButton.Location = new System.Drawing.Point(150, 101);
+            this.FilterButton.Name = "FilterButton";
+            this.FilterButton.Size = new System.Drawing.Size(127, 54);
+            this.FilterButton.TabIndex = 10;
+            this.FilterButton.Text = "Filter Proctection";
+            this.FilterButton.UseVisualStyleBackColor = false;
+            this.FilterButton.Click += new System.EventHandler(this.FilterButton_Click);
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.SettingsButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingsButton.ForeColor = System.Drawing.Color.White;
+            this.SettingsButton.Location = new System.Drawing.Point(150, 41);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.Size = new System.Drawing.Size(127, 54);
+            this.SettingsButton.TabIndex = 9;
+            this.SettingsButton.Text = "Settings";
+            this.SettingsButton.UseVisualStyleBackColor = false;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
+            // 
             // OutputPanel
             // 
             this.OutputPanel.AutoScroll = true;
@@ -306,68 +368,6 @@ namespace Tophet
             this.IntroLabel.TabIndex = 6;
             this.IntroLabel.Text = "Not Registered";
             // 
-            // LogoutButton
-            // 
-            this.LogoutButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.LogoutButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogoutButton.ForeColor = System.Drawing.Color.White;
-            this.LogoutButton.Location = new System.Drawing.Point(150, 161);
-            this.LogoutButton.Name = "LogoutButton";
-            this.LogoutButton.Size = new System.Drawing.Size(127, 54);
-            this.LogoutButton.TabIndex = 11;
-            this.LogoutButton.Text = "Logout";
-            this.LogoutButton.UseVisualStyleBackColor = false;
-            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
-            // 
-            // FilterButton
-            // 
-            this.FilterButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.FilterButton.Font = new System.Drawing.Font("Alef", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FilterButton.ForeColor = System.Drawing.Color.White;
-            this.FilterButton.Location = new System.Drawing.Point(150, 101);
-            this.FilterButton.Name = "FilterButton";
-            this.FilterButton.Size = new System.Drawing.Size(127, 54);
-            this.FilterButton.TabIndex = 10;
-            this.FilterButton.Text = "Filter Proctection";
-            this.FilterButton.UseVisualStyleBackColor = false;
-            this.FilterButton.Click += new System.EventHandler(this.FilterButton_Click);
-            // 
-            // SettingsButton
-            // 
-            this.SettingsButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.SettingsButton.Font = new System.Drawing.Font("Alef", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SettingsButton.ForeColor = System.Drawing.Color.White;
-            this.SettingsButton.Location = new System.Drawing.Point(150, 41);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(127, 54);
-            this.SettingsButton.TabIndex = 9;
-            this.SettingsButton.Text = "Settings";
-            this.SettingsButton.UseVisualStyleBackColor = false;
-            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.roundedButton1.Font = new System.Drawing.Font("Alef", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(53, 167);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(170, 54);
-            this.roundedButton1.TabIndex = 8;
-            this.roundedButton1.Text = "Scan";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // ScannerIMAGE
-            // 
-            this.ScannerIMAGE.BackColor = System.Drawing.Color.Transparent;
-            this.ScannerIMAGE.Image = global::Tophet.Properties.Resources.scan;
-            this.ScannerIMAGE.Location = new System.Drawing.Point(97, 16);
-            this.ScannerIMAGE.Name = "ScannerIMAGE";
-            this.ScannerIMAGE.Size = new System.Drawing.Size(89, 61);
-            this.ScannerIMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ScannerIMAGE.TabIndex = 0;
-            this.ScannerIMAGE.TabStop = false;
-            // 
             // THOPET
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,10 +390,10 @@ namespace Tophet
             this.HistoryPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HistoryGif)).EndInit();
             this.ScanPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ScannerIMAGE)).EndInit();
             this.panel2.ResumeLayout(false);
             this.OutputPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ProtectionIMAGE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ScannerIMAGE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
