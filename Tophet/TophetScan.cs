@@ -16,5 +16,10 @@ namespace Tophet
         {
             InitializeComponent();
         }
+
+        private void scanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

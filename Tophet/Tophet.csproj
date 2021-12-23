@@ -92,6 +92,12 @@
     <Compile Include="THOPPETACCOUNT.Designer.cs">
       <DependentUpon>THOPPETACCOUNT.cs</DependentUpon>
     </Compile>
+    <Compile Include="TophetScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TophetScan.Designer.cs">
+      <DependentUpon>TophetScan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="THOPET.resx">
       <DependentUpon>THOPET.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="THOPPETACCOUNT.resx">
       <DependentUpon>THOPPETACCOUNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TophetScan.resx">
+      <DependentUpon>TophetScan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
